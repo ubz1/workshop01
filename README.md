@@ -2,7 +2,7 @@
 
 ### Your mission:
 
-Have 2 subscribers pick up an insert:
+Have 2 Kafka topic subscribers pick up an insert to the namespace `test.source`:
 ```
 db.source.insertOne({success:1})
 ```
