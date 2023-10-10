@@ -27,7 +27,7 @@ tar xfz kafka_2.13-3.5.1.tgz
 ```
 cd kafka_2.13-3.5.1
 ```
-Edit: config/connect-standalone.properties , add plugin.path=
+edit the config/connect-standalone.properties, i.e. add plugin.path= from above
 ```
 ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
 ```
