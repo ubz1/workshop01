@@ -3,8 +3,9 @@
 ### Your mission:
 
 Have 2 subscribers pick up an insert:
+```
 db.source.insertOne({success:1})
-
+```
 ![](topic-subscribers-get-mongodb-updates-example.png)
 
 ### Here is how:
@@ -40,7 +41,7 @@ Edit: config/connect-standalone.properties , add plugin.path=
 bin/kafka-console-consumer.sh --topic test.source --bootstrap-server localhost:9092
 ```
 
-#### Start Kafka Connector with MongoDB Connector:
+#### Start Kafka Source Connector with MongoDB Connector:
 
 Create your MongoSourceConnector.properties , example: https://github.com/mongodb/mongo-kafka/blob/master/config/MongoSourceConnector.properties 
 and start the connector:
