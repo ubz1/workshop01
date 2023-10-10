@@ -23,9 +23,15 @@ mongod --dbpath dbpath --bind_ip 0.0.0.0 --port 40000 --replSet rs
 
 ```
 tar xfz kafka_2.13-3.5.1.tgz
+```
+```
 cd kafka_2.13-3.5.1
+```
 Edit: config/connect-standalone.properties , add plugin.path=
+```
 ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
+```
+```
 ./bin/kafka-server-start.sh ./config/server.properties
 ```
 
